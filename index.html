@@ -130,6 +130,7 @@ canvas {
 h1 {
     text-align: center;
     margin: 0;
+    font-size: 25px;
   }
 input {
     margin: auto;
@@ -145,6 +146,8 @@ div {
 }
 button {
        margin-bottom: 10px;
+       width: 60px;
+       height: 40px;
 }
 </style>
 
@@ -153,10 +156,12 @@ button {
 <p>1882年～2023年</p>
 <canvas id="canvas" width="664" height="400"></canvas>
 <br>
+<p>ボタンを押すとそれぞれの月の平均気温が表示されます</p>
 <!-- buttonを中央寄せにするときはdivでまとめて寄せる(ボタンに中央寄せをするとボタンの中の文字のみが中央寄せになる)-->
 <div>
   <button onclick="draw(0)">1月</button> <button onclick="draw(1)">2月</button> <button onclick="draw(2)">3月</button> <button onclick="draw(3)">4月</button> <button onclick="draw(4)">5月</button> <button onclick="draw(5)">6月</button> <button onclick="draw(6)">7月</button> <button onclick="draw(7)">8月</button> <button onclick="draw(8)">9月</button> <button onclick="draw(9)">10月</button> <button onclick="draw(10)">11月</button> <button onclick="draw(11)">12月</button>
 </div>
+<p>データ出典：気象庁ホームページ <a href="https://www.data.jma.go.jp/stats/etrn/index.php">https://www.data.jma.go.jp/stats/etrn/index.php</a></p>
 
 </select>
 </body>
